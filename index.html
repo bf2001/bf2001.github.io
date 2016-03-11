@@ -1,85 +1,152 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Your Name Here - Portfolio</title>
-        
-        <style>
-         #navbar {
-           background-color:teal;
-         }
-         
-         
-         body {
-            background-color:rgb(54, 64, 71);
-          }
-          p {
-            color:white:
-          }
-          #main {
-            color:rgb(0, 196, 255);
-          } 
-          #about {
-           color:rgb(0, 196, 255);
-          }
-          #pp {
-            color:white;
-          }
-          #i-do {
-          color:aqua;
-          }
-          #what-i-do {
-          color:white;
-          }
-          #photo { 
-          color:navy;
-          }
-          #pics {
-          color:white;
-          }
-          #ppp {
-          color:maroon
-          }
-          #other {
-          color:white;
-          }
-          a {
-          color:white;
-          }
-          ul {
-          color:white;
-          }
-        </style>
-        
-    </head>
-    <body>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Bryseida Fernandez Website</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:#C2C2C2;
+    }
     
-        <div id="navbar">
-          <!--Watch the Khan Academy Links Video before making links-->
-          <!--Put your list of navbar links here --> 
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Photography</a></li>
-          </ul>
-            
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color:black ;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#FFFFFF;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: #F26101;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("https://45.media.tumblr.com/1b05496a7a059fdc4cd1eba8e605ba35/tumblr_msctcrEs7P1s58fdwo1_500.gif");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                </ul>
+            </ul>
         </div>
-        <div id="main">
-            <!-- Put all of your main HTML here -->
-          <h1>Bryseida "Brissy" Fernandez</h1>
-          <img src="https://38.media.tumblr.com/eb01ab259a9356c0a8aee14ce3551122/tumblr_mh57grHwYG1ri7enpo1_500.gif" alt="Photography" width="750">
-          <h1 id="about">About me </h1>
-          <p id="pp"> I am a nineth grade founding student at Alpha Cindy Avitia.<br>I was born and raised in San Jose California and I am currently living in San Jose. <br>When I'm older i would like to be a lawyer and a dental assaint.
-          <h1 id="i-do">What I do</h1>
-          <p id="what-i-do">I go to school. I like to take photographs of nature and other things. Taking pictures<br>is something i love to do, because a lot of people don't really see nature in a way <br>like I do i find it to be very <em>beautiful</em>.
-          </p>
-          <h1 id="photo">Photographs</h1>
-          <img src="http://1.bp.blogspot.com/-R0bfmo4X3-s/VOPGMLMnW-I/AAAAAAAAIBo/ySndPqafVPU/s1600/nature-animation-gif-6.gif" alt="lake" width="300">
-          <img src="http://api.ning.com/files/DtcI2O2Ry7AZe7fPVWCcPVB6nFtjKSyjU1Rvt6PPLJziTg0GSXbv7IhmadFNvALTrOkbvBNRRf1wWTw6EDlgVy1662SCRY-6/1082116798.gif" alt="turtles!"width="325">
-          <p id="pics"> I chose these pictures because i find the lake picture so relaxing and beautiful because of thedifferent colors and how the water is moving. I chose the turtle picture because i really love turtels i find them so tiny, adorable and so cute and fun to play and hold even thoe they have a hard shell.
-          </p>
-          <h2 id="ppp">Other</h2>
-          <p id="other">I like to play soccer with my friends.<br>I really like turtles a lot !!!!<br><em>Music</em> and <em>Photography</em> are my passion, i really like to listen to music without music to me is like saying what is life.?, Photography on the other hand is because we don't usally worry about and nature and how it's so beautiful.
-          </p>
-        </div> 
-    </body>
+        <div class="main-page">
+            <div class="image-container"></div>
+            
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Bryseida Fernandez Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info"> Born and raised in Eastside San Jose. I am a 9h grade founder student at Alpha Cindy Avitia High School. I like to drink starbucks a lot. I enjoy to to go to differnt places on weekend. I also  love spending time with my family. I like to eat hot cheetos and eat ice cream as well.
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">What I like to Do</h2>
+                <p class="text-info">My phone is basically all I do. I love to be on my phone watching netflix texing friends. I alsp love spening time with my close friends. My favorit place to go to is the beach. I enjoy the beach becaue it's really relaxing. It let my mind take a rest.   
+            </div>
+
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
+    </div>
+    
+    
+
+</body>
 </html>
+
